@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>recipeI></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<% include blocks/header.ejs %>
+
+
+<div class="d-flex justify-content-around align-content-center flex-wrap" style="margin: 3em; margin-top: 10em">
+    <% data.forEach(function (dat) {  %>
+
+        <div class="card mb-3" style="max-width: 73em;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="<%= dat.image%>" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title"><%= dat.name%></h2>
+                        <p class="card-text"><%-dat.recept%></p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <% });%>
+
+</div>
+<footer>
+    <p>Copyright 2014 Ваш сайт</p>
+</footer>
+
+</body>
+
+</html>

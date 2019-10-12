@@ -1,0 +1,33 @@
+{
+  "name": "project_4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cookies": "^0.7.3",
+    "dotenv": "^8.1.0",
+    "ejs": "^2.7.1",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "fs": "0.0.1-security",
+    "mariadb": "^2.1.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.7.0",
+    "nconf": "^0.10.0",
+    "nl2br": "0.0.3",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.19.1",
+    "sqlite3": "^4.1.0",
+    "tedious": "^6.4.0",
+    "winston": "^3.2.1"
+  },
+  "description": ""
+}

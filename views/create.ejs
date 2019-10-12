@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ваш сайт</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+<div class="d-flex flex-column bd-highlight mb-3">
+    <div class="p-2 bd-highlight"><% include blocks/header.ejs%></div>
+    <div class="p-2 bd-highlight">
+
+        <div class="d-flex justify-content-center align-items-center"  style="margin-top: 50px">
+
+            <form method="post" action="/addrecept" style="width: 40%">
+                <div class="form-group">
+                    <label for="exampleInputLogin">urlName</label>
+                    <input type="" name="urSer" class="form-control" id="exampleInputLogin" aria-describedby="loginHelp" placeholder="<%= courseID%>">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">name</label>
+                    <input type="" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NAME">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" name="recept" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">image</label>
+                    <input type="" name="image" class="form-control" id="exampleInputPassword1" placeholder="IMAGE">
+                </div>
+                <button type="submit" class="btn btn-primary">ДОДАТИ</button>
+            </form>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

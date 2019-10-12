@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>recipeI></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+
+<% include blocks/header.ejs %>
+
+
+
+    <article style="margin-top: 5em">
+        <header>
+            <h2><%= CoName%></h2>
+
+        </header>
+
+    </article>
+
+<a class="btn btn-primary" href="/create/<%= CoName%>" role="button">ДОДАТИ СТРАВУ</a>
+
+
+
+<div class="d-flex justify-content-around align-content-center flex-wrap" style="margin: 1em">
+<% data.forEach(function (dat) {  %>
+
+<div class="card" style="width: 30rem; margin-top: 2em">
+    <img src="<%= dat.image%>" class="card-img-top" alt="...">
+    <div class="card-body" style="overflow: hidden; height: 20rem">
+        <a href="/course/<%= dat.id%>"> <h3 class="card-title"><%= dat.name%></h3></a>
+        <p class="card-text" ><%= dat.recept%></p>
+
+    </div>
+    <div class="card-footer">
+        <a href="/course/<%= dat.id%>" class="btn btn-primary">Дивитися рецепт</a>
+    </div>
+</div>
+
+<% });%>
+
+</div>
+<footer>
+    <p>Copyright 2014 Ваш сайт</p>
+</footer>
+
+</body>
+
+</html>

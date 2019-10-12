@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ваш сайт</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+<% include blocks/header.ejs%>
+
+<div class="d-flex justify-content-center">
+<form method="post" action="/registration" style="margin-top: 10em; width: 30em">
+    <div class="form-group">
+        <label for="exampleInputLogin">Введіть логін</label>
+        <input type="login" name="login" class="form-control" id="exampleInputLogin" aria-describedby="loginHelp" >
+        <small id="loginHelp" class="form-text text-muted">We'll never share your login with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Введіть електронну адресу</label>
+        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Введіть пароль</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+        <small id="emailHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" name="check" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+    </div>
+
+</body>
+
+</html>

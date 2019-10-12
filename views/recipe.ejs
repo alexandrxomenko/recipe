@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ваш сайт</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+
+<% include blocks/header.ejs%>
+
+
+
+<section>
+
+    <article>
+        <header>
+            <h2>Заголовок статьи</h2>
+            <p>Опубликовано <time datetime="2014-01-30T16:31:24+03:00">30 января 2014</time> <a href="#">Автор</a> - <a href="#comments">1 комментариев</a></p>
+        </header>
+        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+    </article>
+
+
+
+</section>
+
+
+<h2> привіт <%= logine%></h2>
+<footer>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
